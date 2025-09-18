@@ -1,0 +1,105 @@
+/* General Page Styling */
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f4ef;
+  margin: 0;
+  padding: 0;
+  color: #3e2723;
+}
+
+.blog {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #5d4037;
+}
+
+/* Menu Styling */
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+}
+
+.menu li {
+  display: inline-block;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #6d4c41;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+/* Pseudo-class examples */
+.menu a:hover {
+  background: #8d6e63;
+  color: white;
+}
+
+.menu a:active {
+  background: #4e342e;
+  color: #fff;
+}
+
+.menu a:visited {
+  color: #3e2723;
+}
+
+/* Blog Posts */
+.posts p {
+  background: #fff3e0;
+  padding: 10px;
+  border-left: 4px solid #ff9800;
+  margin: 20px 0 5px 0;
+  border-radius: 4px;
+}
+
+/* Highlight first post */
+.posts p:first-child {
+  font-weight: bold;
+  color: #e65100;
+}
+
+/* Style every odd post */
+.posts p:nth-child(odd) {
+  background:pink
+}
+
+/* Images */
+.posts img {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.posts img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+/* Style all paragraphs except the second one */
+.posts p:not(:nth-of-type(2)) {
+  font-style: italic;
+  color: darkgreen;
+}
+/* Style all images except the last one */
+.posts img:not(:last-of-type) {
+  border: 3px solid orange;
+  border-radius: 8px;
+}
+
+/* Style all menu links except "Home" (the first one) */
+.menu li:not(:first-child) a {
+  color: darkred;
+}

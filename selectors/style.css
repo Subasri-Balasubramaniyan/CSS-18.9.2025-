@@ -1,0 +1,79 @@
+/* Class selector */
+.card{
+    height: 250px;
+    width: 600px;
+    border: solid black 2px;
+    padding: 10px;
+    background-color: bisque;
+    margin-top: 10px;
+    border-radius: 15px;
+     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.profile{
+    display: flex;
+    background-color: beige;
+    border: solid black 2px;
+    border-radius: 20px;
+    padding: 10px;
+    width: 600px;
+    margin-top: 50px;
+}
+/* Element selctors */
+h2{
+    background-color:burlywood;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+    margin-left: 600px;
+    border-radius: 15px;
+}
+li{
+    list-style-type:circle;
+    font-weight: bold;
+    font-family: cursive;
+}
+p{
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+a{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+/* ID selector */
+#name{
+    font-family:serif;
+    text-align: center;
+    margin-left: 10px;
+}
+/* Group Selectors */
+h1,li{
+    color: darkmagenta;
+}
+p,li{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* Pseudo-Classes */
+a:hover{
+    text-decoration: underline;
+    color: brown;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+/* child selector */
+.card > p {
+  color: darkslategray;
+}
+/* Descendent selector */
+.skills li {
+  font-style: italic;
+}
+.profile img{
+    width: 100px;
+    height: 100px;
+}
+@media(max-width:600px) {
+.card{
+    background-color:pink;
+}    
+}
